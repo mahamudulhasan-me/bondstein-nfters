@@ -1,0 +1,47 @@
+[
+  {
+    "name": "CryptoFunks",
+    "rank": 1,
+    "verified": true,
+    "price": "19,769.39",
+    "profit": true,
+    "increasePercent": 26.52,
+    "image": "/images/top/top-1.svg"
+  },
+  {
+    "name": "Cryptix",
+    "rank": 2,
+    "verified": false,
+    "price": "2,769.39",
+    "profit": false,
+    "increasePercent": 10.52,
+    "image": "/images/top/top-2.svg"
+  },
+  {
+    "name": "Frensware",
+    "rank": 3,
+    "verified": false,
+    "price": "9,232.39",
+    "profit": true,
+    "increasePercent": 2.52,
+    "image": "/images/top/top-3.svg"
+  },
+  {
+    "name": "PunkArt",
+    "rank": 4,
+    "verified": true,
+    "price": "3,769.39",
+    "profit": true,
+    "increasePercent": 1.52,
+    "image": "/images/top/top-4.svg"
+  },
+  {
+    "name": "Art Crypto",
+    "rank": 5,
+    "verified": false,
+    "price": "10,769.39",
+    "profit": false,
+    "increasePercent": 2.52,
+    "image": "/images/top/top-5.svg"
+  }
+]
