@@ -54,21 +54,21 @@ const HeroSection = () => {
         <Image
           src="/images/img-3.svg"
           alt="Hero Image"
-          width={290}
-          height={310}
-          className="absolute right-0 z-10"
+          width={220}
+          height={250}
+          className="absolute right-0 -top-10 z-10"
         />
         <Image
           src="/images/img-2.svg"
           alt="Hero Image"
-          width={330}
+          width={280}
           height={360}
           className="absolute right-5 -inset-y-5 z-20"
         />
 
-        <div className="absolute  right-10 -inset-y-10  w-[360px] h-[410px] rounded-3xl z-30 ">
+        <div className="absolute  right-10 -inset-y-10  w-[300px] h-[400px] rounded-3xl z-30 ">
           <Image src="/images/img-1.svg" alt="Hero Image" fill />
-          <div className="absolute bottom-6 inset-x-6 current_bid-overly px-7 py-4 text-white flex-center-between">
+          <div className="absolute bottom-12 inset-x-6 current_bid-overly px-7 py-4 text-white flex-center-between">
             <div className="space-y-1 ">
               <p className="text-xs text-white">Current Bid</p>
               <p className=" flex items-center gap-1 text-white">
