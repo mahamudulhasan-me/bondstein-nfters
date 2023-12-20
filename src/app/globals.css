@@ -34,3 +34,47 @@ h6 {
   background: rgba(217, 224, 236, 0.2);
   backdrop-filter: blur(25px);
 }
+
+.btn-outline {
+  --color: #3d00b7;
+  background-color: #fff;
+  font-family: inherit;
+  display: inline-block;
+
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--color);
+}
+
+.btn-outline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50px;
+  bottom: 100%;
+  right: 100%;
+  transition: 0.8s ease;
+}
+
+.btn-outline:hover {
+  color: #fff;
+}
+
+.btn-outline:hover:before {
+  bottom: -30px;
+  left: -30px;
+}
+
+.btn-outline:active:before {
+  background: #3a0ca3;
+  transition: background 2s;
+}
