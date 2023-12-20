@@ -4,7 +4,7 @@ import BtnPrimary from "../Buttons/BtnPrimary";
 
 const CreateNFTs = () => {
   return (
-    <div className="px-[5%] grid grid-cols-2 mb-72  gap-20 py-12">
+    <div className="px-[5%] grid md:grid-cols-2 mb-72  gap-20 py-12">
       <>
         <section className="relative h-full inset-0">
           <figure className="absolute top-0 left-0 w-[300px] h-[300px]">

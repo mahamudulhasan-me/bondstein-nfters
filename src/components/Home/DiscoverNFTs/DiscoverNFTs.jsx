@@ -25,8 +25,8 @@ const DiscoverNFTs = () => {
   return (
     <div className="px-[5%] section-bg py-12">
       <h3 className={`${candal.className}  text-4xl`}>Discover more NFTs</h3>
-      <section className="flex-center-between mt-8">
-        <ul className="flex gap-4">
+      <section className="flex-center-between flex-wrap mt-8">
+        <ul className="flex items-center flex-wrap gap-4 mb:mb-0 mb-4">
           {categories.map((item, index) => (
             <li
               className="bg-[#DCDCDC] bg-opacity-50 px-5 py-2.5 rounded-[60px] hover:bg-primary-purple hover:text-white transition-all duration-300 cursor-pointer font-semibold"
@@ -40,7 +40,7 @@ const DiscoverNFTs = () => {
           <IoFilter size={30} /> All Filters
         </button>
       </section>
-      <section className="grid grid-cols-4 gap-8 mt-10">
+      <section className="grid md:grid-cols-4 gap-8 mt-10">
         {NFTs.map((item, index) => (
           <NFTsCard key={index} name={item.name} image={item.image} />
         ))}

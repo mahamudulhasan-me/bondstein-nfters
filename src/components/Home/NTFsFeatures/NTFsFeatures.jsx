@@ -33,7 +33,7 @@ const NTFsFeatures = () => {
       <h3 className={`${candal.className} font-semibold text-3xl`}>
         Collection Featured NFTs
       </h3>
-      <div className="grid grid-cols-3 items-center gap-10 mt-14">
+      <div className="grid md:grid-cols-3 items-center gap-10 mt-14">
         {featuresImage.map((item, index) => (
           <section key={index}>
             <div className="flex gap-2">

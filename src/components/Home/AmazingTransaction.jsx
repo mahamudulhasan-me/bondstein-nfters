@@ -3,7 +3,7 @@ import { FaRegChartBar } from "react-icons/fa";
 import { TbTransferIn } from "react-icons/tb";
 const AmazingTransaction = () => {
   return (
-    <div className="section-bg grid grid-cols-3 gap-10 py-20 px-[5%]">
+    <div className="section-bg grid md:grid-cols-3 gap-10 py-20 px-[5%]">
       <h3 className={`${candal.className} text-3xl text-text-dark`}>
         The amazing NFT art of the world here
       </h3>

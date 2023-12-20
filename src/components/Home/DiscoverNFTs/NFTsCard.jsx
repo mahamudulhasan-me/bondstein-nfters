@@ -4,7 +4,7 @@ const NFTsCard = ({ name, image }) => {
   return (
     <div className="bg-white border rounded-xl p-2.5">
       <figure className="relative">
-        <Image src={image} width={247} height={222} alt="" />
+        <Image src={image} width={247} height={222} alt="" className="w-full" />
         <div className="absolute -bottom-3 left-3 flex -space-x-3">
           <Image
             src="/images/people/people-3.svg"
