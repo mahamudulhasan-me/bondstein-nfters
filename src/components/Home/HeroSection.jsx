@@ -23,17 +23,17 @@ const HeroSection = () => {
           <Counter title="Artist" number="15" />
         </section>
       </section>
-      <section className="relative h-full -bottom-50 -top-5 left-0">
+      <section className="hidden md:block md:relative h-full -bottom-50 -top-5 left-0">
         <>
-          <div className="absolute right-0 top-12 w-[310px] h-[341px] z-10 bg-red-50 rounded-3xl">
-            <Image src="/images/img-3.svg" alt="Hero Image" fill />
+          <div className="md:absolute md:right-0 md:top-12 w-[310px] h-[341px] z-10 bg-red-50 rounded-3xl">
+            <Image src="/images/img-3.svg" alt="Hero Image" fill /> 1
           </div>
-          <div className="absolute right-10 top-6 w-[356px] h-[391px]  z-20 rounded-3xl ">
+          <div className="md:absolute md:right-10 md:top-6 w-[356px] h-[391px]  z-20 rounded-3xl ">
             <Image src="/images/img-2.svg" alt="Hero Image" fill />
           </div>
-          <div className="absolute right-20 w-[400px] h-[440px] rounded-3xl z-30 ">
+          <div className="md:absolute relative md:right-20 w-[400px] h-[440px] rounded-3xl z-30 ">
             <Image src="/images/img-1.svg" alt="Hero Image" fill />
-            <div className=" absolute bottom-6 inset-x-6 current_bid-overly px-7 py-4 text-white flex-center-between">
+            <div className="absolute bottom-6 inset-x-6 current_bid-overly px-7 py-4 text-white flex-center-between">
               <div className="space-y-1 ">
                 <p className="text-xs text-white">Current Bid</p>
                 <p className=" flex items-center gap-1 text-white">
@@ -49,6 +49,38 @@ const HeroSection = () => {
             </div>
           </div>
         </>
+      </section>
+      <section className="relative md:hidden">
+        <Image
+          src="/images/img-3.svg"
+          alt="Hero Image"
+          width={290}
+          height={310}
+          className="absolute right-0 z-10"
+        />
+        <Image
+          src="/images/img-2.svg"
+          alt="Hero Image"
+          width={330}
+          height={360}
+          className="absolute right-5 -inset-y-5 z-20"
+        />
+
+        <div className="absolute  right-10 -inset-y-10  w-[360px] h-[410px] rounded-3xl z-30 ">
+          <Image src="/images/img-1.svg" alt="Hero Image" fill />
+          <div className="absolute bottom-6 inset-x-6 current_bid-overly px-7 py-4 text-white flex-center-between">
+            <div className="space-y-1 ">
+              <p className="text-xs text-white">Current Bid</p>
+              <p className=" flex items-center gap-1 text-white">
+                <FaEthereum size={20} /> 0.25 ETH
+              </p>
+            </div>
+            <div className="space-y-1 ">
+              <p className="text-xs text-white">Ends in</p>
+              <p className=" flex items-center gap-1 text-white">12h 43m 42s</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

@@ -38,7 +38,7 @@ const NTFsFeatures = () => {
           <section key={index}>
             <div className="flex gap-2">
               <Image src={item.main} width={265} height={272} alt="" />
-              <aside className="flex flex-col justify-between">
+              <aside className="flex flex-col justify-between gap-2 md:gap-0">
                 {item.group.map((img, index) => (
                   <Image key={index} src={img} width={103} height={85} alt="" />
                 ))}
