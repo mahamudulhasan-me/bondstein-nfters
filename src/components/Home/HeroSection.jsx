@@ -34,15 +34,17 @@ const HeroSection = () => {
           <div className="absolute right-20 w-[400px] h-[440px] rounded-3xl z-30 ">
             <Image src="/images/img-1.svg" alt="Hero Image" fill />
             <div className=" absolute bottom-6 inset-x-6 current_bid-overly px-7 py-4 text-white flex-center-between">
-              <div className="space-y-1">
-                <p className="text-xs">Current Bid</p>
-                <p className=" flex items-center gap-1">
+              <div className="space-y-1 ">
+                <p className="text-xs text-white">Current Bid</p>
+                <p className=" flex items-center gap-1 text-white">
                   <FaEthereum size={20} /> 0.25 ETH
                 </p>
               </div>
-              <div className="space-y-1">
-                <p className="text-xs">Ends in</p>
-                <p className=" flex items-center gap-1">12h 43m 42s</p>
+              <div className="space-y-1 ">
+                <p className="text-xs text-white">Ends in</p>
+                <p className=" flex items-center gap-1 text-white">
+                  12h 43m 42s
+                </p>
               </div>
             </div>
           </div>
