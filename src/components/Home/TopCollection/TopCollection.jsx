@@ -7,13 +7,13 @@ const TopCollection = () => {
   return (
     <div className="px-[5%] py-28 grid md:grid-cols-12 gap-6">
       <section className="col-span-8 md:flex justify-between gap-10">
-        <div className="md:w-1/2 ">
+        <div className="md:w-1/2 w-[90%]">
           <Image
             src="/images/img-4.svg"
             width={400}
             height={424}
             alt=""
-            // className="w-full"
+            // className="md:w-full w-4/5"
           />
           <div className="flex-center-between py-8">
             <aside className="flex items-center gap-2">
