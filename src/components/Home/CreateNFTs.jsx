@@ -29,7 +29,7 @@ const CreateNFTs = () => {
               />
             </figure>
           </aside>
-          <figure className="relative w-[170px] h-[200px] md:w-[240px] md:h-[265px] z-10">
+          <figure className="relative w-[150px] h-[200px] md:w-[240px] md:h-[265px] z-10">
             <Image src="/images/img-2.svg" fill alt="" />
             <Image
               src="/images/people/people-2.svg"
