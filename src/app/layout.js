@@ -1,7 +1,7 @@
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import { Candal, DM_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 
 export const candal = Candal({
   subsets: ["latin"],
@@ -18,10 +18,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${candal.className} ${dm_sans.className}`}>
-        <Header/>
+      <body className={`${candal.className} ${dm_sans.className} `}>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

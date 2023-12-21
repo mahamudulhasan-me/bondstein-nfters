@@ -26,8 +26,8 @@ const TopCollectionChartByRank = () => {
         <div key={item.rank} className="flex-center-between gap-4 py-4">
           <div className="flex items-center gap-4">
             <h1 className="text-2xl">{item?.rank}</h1>
-            <figure className="relative">
-              <Image src={item?.image} width={60} height={60} alt="" />
+            <figure className="relative w-12 h-12 md:w-14 md:h-14">
+              <Image src={item?.image} fill alt="" />
               {item?.verified && (
                 <RiVerifiedBadgeFill className="absolute -top-2 -right-2 text-[#1E93FF] text-3xl" />
               )}

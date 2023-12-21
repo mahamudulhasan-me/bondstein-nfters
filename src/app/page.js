@@ -7,7 +7,7 @@ import TopCollection from "@/components/Home/TopCollection/TopCollection";
 
 export default function Home() {
   return (
-    <main className="container mx-auto">
+    <main>
       <HeroSection />
       <AmazingTransaction />
       <TopCollection />

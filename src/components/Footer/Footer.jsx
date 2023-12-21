@@ -48,7 +48,7 @@ const Footer = () => {
             Join our mailing list to stay in the loop with our newest feature
             releases, NFT drops, and tips and tricks for navigating NFTs.
           </p>
-          <form className="ring-2 mt-8 ring-[#F1F1F1] rounded-[45px] flex justify-between items-center w-full p-1">
+          <form className="ring-2 group hover:ring-primary-purple transition-all duration-300 mt-8 ring-[#F1F1F1] rounded-[45px] flex justify-between items-center w-full p-1">
             <input
               type="email"
               className="h-full w-full outline-none focus:outline-none ml-2"
@@ -56,7 +56,7 @@ const Footer = () => {
             <input
               type="submit"
               value="Subscribe Now"
-              className="bg-[#2639ED] text-white rounded-[45px] py-3 px-4 font-semibold cursor-pointer"
+              className="bg-[#2639ED] bg-opacity-70 group-hover:bg-opacity-100 transition-all duration-100 text-white rounded-[45px] py-3 px-4 font-semibold cursor-pointer"
             />
           </form>
         </section>

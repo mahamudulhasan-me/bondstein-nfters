@@ -3,10 +3,11 @@ import Image from "next/image";
 import { FaEthereum } from "react-icons/fa";
 import BtnPrimary from "../Buttons/BtnPrimary";
 import Counter from "../Counter/Counter";
+import LiveAuction from "./LiveAuction";
 const HeroSection = () => {
   return (
     <div className="px-[5%] grid md:grid-cols-2 justify-center items-center py-20 gap-20 ">
-      <section>
+      <section className="relative">
         <h1
           className={`font-semibold text-[40px] uppercase font-candal ${candal.className}`}
         >
@@ -22,6 +23,13 @@ const HeroSection = () => {
           <Counter title="Auction" number="12" />
           <Counter title="Artist" number="15" />
         </section>
+        <Image
+          src={"/images/Dot.svg"}
+          width={196}
+          height={154}
+          alt=""
+          className="absolute -bottom-5 -left-10 -z-10"
+        />
       </section>
       <section className="hidden md:block md:relative h-full -bottom-50 -top-5 left-0">
         <>
@@ -47,9 +55,11 @@ const HeroSection = () => {
                 </p>
               </div>
             </div>
+            <LiveAuction />
           </div>
         </>
       </section>
+      {/* mobile view  */}
       <section className="relative md:hidden">
         <Image
           src="/images/img-3.svg"
@@ -80,6 +90,7 @@ const HeroSection = () => {
               <p className=" flex items-center gap-1 text-white">12h 43m 42s</p>
             </div>
           </div>
+          <LiveAuction />
         </div>
       </section>
     </div>
