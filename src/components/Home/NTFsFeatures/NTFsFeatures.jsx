@@ -34,11 +34,12 @@ const NTFsFeatures = () => {
         Collection Featured NFTs
       </h3>
       <div className="grid md:grid-cols-3 items-center gap-10 mt-14">
+        {/* map features image  */}
         {featuresImage.map((item, index) => (
           <section key={index}>
             <div className="flex gap-2">
               <Image src={item.main} width={265} height={272} alt="" />
-              <aside className="flex flex-col justify-between gap-2 md:gap-0">
+              <aside className="flex flex-col justify-between gap-2 ">
                 {item.group.map((img, index) => (
                   <Image key={index} src={img} width={103} height={85} alt="" />
                 ))}

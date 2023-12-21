@@ -8,6 +8,7 @@ import TopCollection from "@/components/Home/TopCollection/TopCollection";
 export default function Home() {
   return (
     <main>
+      {/* all home page component here  */}
       <HeroSection />
       <AmazingTransaction />
       <TopCollection />
