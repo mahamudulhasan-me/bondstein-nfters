@@ -22,13 +22,17 @@ const ResponsiveMenu = () => {
           isMenuOpen ? " right-0 left-0" : "-left-full"
         }`}
       >
-        <div className="flex flex-col font-semibold text-text-light space-y-4">
+        <nav className=" flex flex-col font-semibold text-text-light space-y-4">
           {navItem.map((item, index) => (
-            <Link key={index} href={"/"}>
+            <Link
+              key={index}
+              href={"/"}
+              className="hover:text-primary-purple transition-all duration-300 "
+            >
               {item}
             </Link>
           ))}
-        </div>
+        </nav>
         <BtnPrimary title="Upload" />
         <BtnOutline title="Connect Wallet" />
         <SearchForm />

@@ -22,6 +22,10 @@ h6 {
   @apply flex justify-between items-center;
 }
 
+nav .navItem:hover {
+  color: #3d00b7;
+}
+
 .current_bid-overly {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(25px);

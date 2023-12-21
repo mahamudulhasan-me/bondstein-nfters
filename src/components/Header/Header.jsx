@@ -1,4 +1,5 @@
 import { candal } from "@/app/layout";
+import Link from "next/link";
 import BtnOutline from "../Buttons/BtnOutline";
 import BtnPrimary from "../Buttons/BtnPrimary";
 import ResponsiveMenu from "./ResponsiveMenu";
@@ -14,15 +15,14 @@ const Header = () => {
       </h5>
       {/* desktop view menu  */}
       <>
-        <nav>
-          <ul className="md:flex gap-6 hidden">
-            {navItem.map((item) => (
-              <li className="text-text-dark" key={item}>
-                {item}
-              </li>
-            ))}
-          </ul>
+        <nav className="md:flex gap-6 hidden">
+          {navItem.map((item) => (
+            <Link href="" className="text-text-dark " key={item}>
+              {item}
+            </Link>
+          ))}
         </nav>
+
         <span className="hidden md:block">
           <SearchForm />
         </span>
