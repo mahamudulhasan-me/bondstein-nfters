@@ -6,7 +6,10 @@ import Counter from "../Counter/Counter";
 import LiveAuction from "./LiveAuction";
 const HeroSection = () => {
   return (
-    <div className="px-[5%] grid md:grid-cols-2 justify-center items-center py-20 gap-20 ">
+    <div
+      className="px-[5%] grid md:grid-cols-2 justify-center items-center py-20 gap-20 
+     container mx-auto"
+    >
       <section className="relative">
         <h1
           className={`font-semibold text-[40px] uppercase font-candal ${candal.className}`}

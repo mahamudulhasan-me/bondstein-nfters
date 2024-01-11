@@ -4,7 +4,7 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="grid md:grid-cols-3 gap-12 px-[5%] py-14">
+      <footer className="grid md:grid-cols-3 gap-12 px-[5%] py-14 container mx-auto">
         <section>
           <h5 className={`uppercase text-2xl ${candal.className}`}>NFters </h5>
           <p className="mt-6 mb-9">

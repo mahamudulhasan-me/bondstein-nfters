@@ -4,7 +4,7 @@ import BtnPrimary from "../Buttons/BtnPrimary";
 
 const CreateNFTs = () => {
   return (
-    <div className="px-[5%] grid md:grid-cols-2 items-center  gap-20 py-12">
+    <div className="px-[5%] grid md:grid-cols-2 items-center  gap-20 py-12 container mx-auto">
       <>
         <section className="flex justify-between items-center md:gap-8">
           <aside className="flex flex-col justify-end items-end gap-4 md:gap-8 z-20">

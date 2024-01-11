@@ -5,7 +5,7 @@ import BidCard from "./BidCard";
 import TopCollectionChartByRank from "./TopCollectionChartByRank";
 const TopCollection = () => {
   return (
-    <div className="px-[5%] py-28 grid md:grid-cols-12 gap-6">
+    <div className="px-[5%] py-28 grid md:grid-cols-12 gap-6 container mx-auto">
       <section className="col-span-8 md:flex justify-between gap-10">
         <div className="md:w-1/2 ">
           <Image
